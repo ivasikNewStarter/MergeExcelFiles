@@ -11,6 +11,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+/*
+ Merge Excel Files with different headers
+ */
+
 public class MergeFiles {
     private static Workbook wb1,wb2,wb3,wb4,wb5,wb6,wb7,wb8,wb9,wb10,wb11;
     private static FileInputStream fis1,fis2,fis3,fis4,fis5,fis6,fis7,fis8,fis9,fis10,fis11;
@@ -20,9 +24,9 @@ public class MergeFiles {
     public void MergeRatedFiles(ActionEvent actionEvent) {
         try {
             // get input excel files
-            fis1 = new FileInputStream("C:\\Users\\u0139221\\Desktop\\Main\\Rated\\Moody's.xlsx");
-            fis2 = new FileInputStream("C:\\Users\\u0139221\\Desktop\\Main\\Rated\\Fitch.xlsx");
-            fis3 = new FileInputStream("C:\\Users\\u0139221\\Desktop\\Main\\Rated\\SnP.xlsx");
+            fis1 = new FileInputStream("C:\\Users\\xxxx\\Desktop\\Main\\Rated\\Moody's.xlsx");
+            fis2 = new FileInputStream("C:\\Users\\xxxx\\Desktop\\Main\\Rated\\Fitch.xlsx");
+            fis3 = new FileInputStream("C:\\Users\\xxxx\\Desktop\\Main\\Rated\\SnP.xlsx");
 
             // Create Workbook instance holding reference to .xlsx file
             wb1 = WorkbookFactory.create(fis1);
@@ -42,7 +46,7 @@ public class MergeFiles {
             fis3.close();
 
             // save merged file
-            File mergedFile = new File("C:\\Users\\u0139221\\Desktop\\Main\\Rated\\SummaryReport.xlsx");
+            File mergedFile = new File("C:\\Users\\xxxx\\Desktop\\Main\\Rated\\SummaryReport.xlsx");
             if (!mergedFile.exists()) {
                 mergedFile.createNewFile();
             }
@@ -60,17 +64,17 @@ public class MergeFiles {
     public void MergeVendorFiles(ActionEvent actionEvent) {
         try {
             // get input excel files
-            fis1 = new FileInputStream("C:\\Users\\u0139221\\Desktop\\Main\\Vendor\\WM.xlsx");
-            fis2 = new FileInputStream("C:\\Users\\u0139221\\Desktop\\Main\\Vendor\\AIAF.xlsx");
-            fis3 = new FileInputStream("C:\\Users\\u0139221\\Desktop\\Main\\Vendor\\CDS.xlsx");
-            fis4 = new FileInputStream("C:\\Users\\u0139221\\Desktop\\Main\\Vendor\\STAMDATA.xlsx");
-            fis5 = new FileInputStream("C:\\Users\\u0139221\\Desktop\\Main\\Vendor\\KOSCOM.xlsx");
-            fis6 = new FileInputStream("C:\\Users\\u0139221\\Desktop\\Main\\Vendor\\OEKB.xlsx");
-            fis7 = new FileInputStream("C:\\Users\\u0139221\\Desktop\\Main\\Vendor\\ICMA.xlsx");
-            fis8 = new FileInputStream("C:\\Users\\u0139221\\Desktop\\Main\\Vendor\\PROPRIS.xlsx");
-            fis9 = new FileInputStream("C:\\Users\\u0139221\\Desktop\\Main\\Vendor\\MILSE.xlsx");
-            fis10 = new FileInputStream("C:\\Users\\u0139221\\Desktop\\Main\\Vendor\\CIBC.xlsx");
-            fis11 = new FileInputStream("C:\\Users\\u0139221\\Desktop\\Main\\Vendor\\AIAF BOND.xlsx");
+            fis1 = new FileInputStream("C:\\Users\\xxxx\\Desktop\\Main\\Vendor\\WM.xlsx");
+            fis2 = new FileInputStream("C:\\Users\\xxxx\\Desktop\\Main\\Vendor\\AIAF.xlsx");
+            fis3 = new FileInputStream("C:\\Users\\xxxx\\Desktop\\Main\\Vendor\\CDS.xlsx");
+            fis4 = new FileInputStream("C:\\Users\\xxxx\\Desktop\\Main\\Vendor\\STAMDATA.xlsx");
+            fis5 = new FileInputStream("C:\\Users\\xxxx\\Desktop\\Main\\Vendor\\KOSCOM.xlsx");
+            fis6 = new FileInputStream("C:\\Users\\xxxx\\Desktop\\Main\\Vendor\\OEKB.xlsx");
+            fis7 = new FileInputStream("C:\\Users\\xxxx\\Desktop\\Main\\Vendor\\ICMA.xlsx");
+            fis8 = new FileInputStream("C:\\Users\\xxxx\\Desktop\\Main\\Vendor\\PROPRIS.xlsx");
+            fis9 = new FileInputStream("C:\\Users\\xxxx\\Desktop\\Main\\Vendor\\MILSE.xlsx");
+            fis10 = new FileInputStream("C:\\Users\\xxxx\\Desktop\\Main\\Vendor\\CIBC.xlsx");
+            fis11 = new FileInputStream("C:\\Users\\xxxx\\Desktop\\Main\\Vendor\\AIAF BOND.xlsx");
 
             // Create Workbook instance holding reference to .xlsx file
             wb1 = WorkbookFactory.create(fis1);
@@ -125,7 +129,7 @@ public class MergeFiles {
 
 
             // save merged file
-            File mergedFile = new File("C:\\Users\\u0139221\\Desktop\\Main\\Vendor\\SummaryReport.xlsx");
+            File mergedFile = new File("C:\\Users\\xxxx\\Desktop\\Main\\Vendor\\SummaryReport.xlsx");
             if (!mergedFile.exists()) {
                 mergedFile.createNewFile();
             }
